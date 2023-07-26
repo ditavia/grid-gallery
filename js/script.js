@@ -136,7 +136,8 @@
             items: 1,
             autoplay: true,
             loop: true,
-            animateOut: 'fadeOut'
+            animateOut: 'fadeOut',
+           
         });
     }
 
@@ -506,7 +507,7 @@ const url = window.location.href;
 const urlParams = new URLSearchParams(url);
 const tamu = urlParams.get('tamu');
 const div = document.getElementById("tamu");
-div.innerHTML = tamu;
+div.innerHTML = (tamu )?tamu :"Dita Via Tyasmala";
 
 let myAudio = new Audio();
 const playAudio=()=> {
