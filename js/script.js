@@ -129,8 +129,16 @@
                 }
             });
         }
-    }    
+    } 
 
+    if ($(".hero-slider").length) {
+        $(".hero-slider").owlCarousel({
+            items: 1,
+            autoplay: true,
+            loop: true,
+            animateOut: 'fadeOut'
+        });
+    }
 
 
     /*------------------------------------------
@@ -440,13 +448,13 @@
         });
     }
 
-
+   
     /*==========================================================================
         WHEN DOCUMENT LOADING 
     ==========================================================================*/
-        $(window).on('load', function() {
+        $(window).on('load', function() {          
             preloader();
-
+           
             bgParallax();
 
             sliderBgSetting();
@@ -457,7 +465,7 @@
 
             if ($(".map").length) {
                 map();
-            } 
+            }            
         });
 
 
@@ -472,7 +480,7 @@
 
         parallaxFlower();
     });
-
+   
 const salin = (btn, msg = null) => {
     navigator.clipboard.writeText(btn.getAttribute('data-nomer'));
     let tmp = btn.innerHTML;
@@ -485,5 +493,30 @@ const salin = (btn, msg = null) => {
         btn.focus();
     }, 1500);
 };
+$("#isi").hide();
+$("#btbuka").click(function() {
+    $("#isi").show();
+    $("#bukaan").hide();
+    playAudio();
+  });
 
 })(window.jQuery);
+
+const url = window.location.href;
+const urlParams = new URLSearchParams(url);
+const tamu = urlParams.get('tamu');
+const div = document.getElementById("tamu");
+div.innerHTML = tamu;
+
+let myAudio = new Audio();
+const playAudio=()=> {
+   
+    myAudio.src = 'hbd.mp3';
+    myAudio.autoplay = true;
+    myAudio.loop = true;
+}
+function pauseAudio(){
+   
+    myAudio.pause();
+}
+
