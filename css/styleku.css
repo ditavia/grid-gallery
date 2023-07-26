@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 :root {
     --maroon: #8B0000;
     --bg: #0a0a0a;
@@ -31,14 +32,19 @@ body {
     justify-content: center !important;
     display: flex ;
    padding: 5rem;
+   
+   font-family: 'Montserrat';
 }
-
-.bukaan h1 ,h4, p {
-    font-family: 'Dancing Script', cursive;
+.text-white{
     color: white;
 }
 
-.bukaan a,button {
+.dace {
+    font-family: 'Dancing Script', cursive;
+}
+
+.bukaan button {
+    border: none;
     color: var(--maroon);
     background-color: white;
 }
