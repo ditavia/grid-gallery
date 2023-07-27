@@ -56,6 +56,29 @@ ul {
   padding: 125px 0 120px;
 }
 
+.rek {
+  padding-bottom: 20px;
+}
+
+.kotakrek {
+    margin-top: 1rem;
+    border:grey;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 41px;
+    padding: 12px;
+}
+
+.aa {
+    margin-top: 1rem;
+    border: grey;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 41px;
+    padding: 12px;
+}
+
+
 @media (max-width: 767px) {
   .section-padding {
     padding: 80px 0;
