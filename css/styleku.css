@@ -2,14 +2,8 @@
 :root {
     --maroon: #8B0000;
     --bg: #0a0a0a;
-    --shadow: 0 2px 2px rgb(0, 0, 0/0.5);
+    --shadow: 0 2px 2px rgb(0 0 0/0.5);
 }
-/*  
-body {
-    font-size: 1.2 rem;
-    font-family: 'Montserrat', sans-serif;
-    min-height: 2000px;
-} */
 
 .bukaan::before {
     content: '';
@@ -21,6 +15,7 @@ body {
     background-image: url(../images/bgwedding.jpg);
     background-position: center center;
     z-index: -1;
+    filter: blur(2px);
 }
 
 .bukaan {
@@ -31,9 +26,8 @@ body {
     align-items: center !important;
     justify-content: center !important;
     display: flex ;
-   padding: 5rem;
-   
-   font-family: 'Montserrat';
+    padding: 5rem;
+    font-family: 'Montserrat';
 }
 .text-white{
     color: white;
@@ -54,3 +48,6 @@ body {
     color: white;
 }
 
+.bukaan h1, .bukaan h4, .bukaan p {
+    text-shadow: var(--shadow);
+}

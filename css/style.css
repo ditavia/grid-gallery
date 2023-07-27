@@ -681,11 +681,11 @@ ul {
 /***********************
 = Navigation
 ***********************/
-header {
+/* header {
   /* navigation open and close btn hide for width screen */
   /* style for navigation less than 992px */
   /*navbar collaps less then 992px*/
-}
+/* } */ 
 
 header .navigation {
   background-color: #fff;
@@ -826,9 +826,9 @@ header #navbar .navbar-nav > .open > a:hover {
 }
 
 @media (max-width: 991px) {
-  header {
-    /* class for show hide navigation */
-  }
+  /* header {
+    /* class for show hide navigation 
+  } */
   header .container {
     width: 100%;
   }
@@ -2519,10 +2519,10 @@ footer .copyright {
   }
 }
 
-.rsvp .rsvp-form-wrapper form {
+/* .rsvp .rsvp-form-wrapper form {
   /** ui elements **/
-  /** submission haldaling **/
-}
+  /** submission haldaling *
+} */
 
 .rsvp .rsvp-form-wrapper form .col {
   margin-bottom: 25px;
