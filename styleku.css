@@ -19,6 +19,7 @@ body {
     height: 100%;
     background-image: url(images/bgwedding.jpg);
     z-index: -1;
+    opacity: 0.5;
 }
 
 .bukaan {

@@ -524,3 +524,15 @@ function pauseAudio(){
     myAudio.pause();
 }
 
+const salin = (btn, msg = null) => {
+    navigator.clipboard.writeText(btn.getAttribute('data-nomer'));
+    let tmp = btn.innerHTML;
+    btn.innerHTML = msg ?? 'Tersalin';
+    btn.disabled = true;
+
+    setTimeout(() => {
+        btn.innerHTML = tmp;
+        btn.disabled = false;
+        btn.focus();
+    }, 1500);
+};
