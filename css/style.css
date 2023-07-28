@@ -78,6 +78,26 @@ ul {
     padding: 12px;
 }
 
+.chat {
+    margin-top: 1rem;
+    /* border: grey; */
+    /* border-width: 1px; */
+    /* border-style: solid; */
+    border-radius: 41px;
+    /* padding: 25px; */
+    /* background-color: #cccccc; */
+}
+
+.isic {
+  padding-bottom: 18px;
+}
+
+.item img {
+  width: 100%;
+}
+
+
+
 
 @media (max-width: 767px) {
   .section-padding {
@@ -2403,10 +2423,22 @@ footer .copyright {
 
 .rsvp .rsvp-form-wrapper {
   background: #fff url(../images/rsvp-pattern.png);
-  text-align: center;
-  padding: 50px;
+  padding: 30px;
   position: relative;
+  border-radius: 41px;
+  
 }
+
+.rsvp .rsvp-form-chat {
+      background: #fff url(../images/rsvp-pattern.png);
+      position: relative;
+      border-radius: 25px;
+      margin-top: 15px;
+      padding-left: 25px;
+      padding-right: 25px;
+}
+
+
 
 @media (max-width: 500px) {
   .rsvp .rsvp-form-wrapper {
