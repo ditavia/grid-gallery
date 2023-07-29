@@ -455,21 +455,23 @@
     /*==========================================================================
         WHEN DOCUMENT LOADING 
     ==========================================================================*/
-        $(window).on('load', function() {          
-            preloader();
+    const awal = () => {
+        /*   $(window).on('load', function () {         */
+        preloader();
            
-            bgParallax();
+        bgParallax();
 
-            sliderBgSetting();
+        sliderBgSetting();
 
-            parallaxFlower();
+        parallaxFlower();
 
-            masonryGridSetting();
+        masonryGridSetting();
 
-            if ($(".map").length) {
-                map();
-            }            
-        });
+        if ($(".map").length) {
+            map();
+        }
+    }         
+     //   });
 
 
 
@@ -501,6 +503,7 @@ $("#btbuka").click(function() {
     $("#isi").show();
     $("#bukaan").hide();
     playAudio();
+    awal();
   });
 
 })(window.jQuery);
