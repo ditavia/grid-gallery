@@ -482,38 +482,38 @@
                     </div>
                 </div> <!-- end of section-title -->
                 <div class="row">
-                    <div class="col col-md-2 col-xs-2"></div>
-                    <div class="col col-md-8 col-xs-8">
+                    <div class="col col-md-12 col-xs-12">
                         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                         <ol class="carousel-indicators">
                             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                         </ol>
 
                     <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img src="images/gallery/big-photo/img-1.jpg" class="img-thumbnail">
+                                <img src="images/gallery/big-photo/img-1.jpg" class="img img-responsive">
                                 <div class="carousel-caption">
                                     Foto awal pertemuan
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="images/gallery/big-photo/img-2.jpg" class="img-thumbnail">
+                                <img src="images/gallery/big-photo/img-2.jpg" class="img img-responsive">
                                 <div class="carousel-caption">
                                     Foto pertemuan kedua
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="images/gallery/big-photo/img-3.jpg" class="img-thumbnail">
+                                <img src="images/gallery/big-photo/img-3.jpg" class="img img-responsive">
                                 <div class="carousel-caption">
                                     Foto pertemuan ketiga
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="images/gallery/big-photo/img-4.jpg" class="img-thumbnail">
+                                <img src="images/gallery/big-photo/img-4.jpg" class="img img-responsive">
                                 <div class="carousel-caption">
                                     Foto pertemuan keempat
                                 </div>
@@ -532,7 +532,6 @@
                         </a>
                         </div>
                     </div>
-                <div class="col col-md-2 col-xs-2"></div>
                 </div>
             </div> <!-- end of container -->
         </section>
@@ -543,12 +542,13 @@
         <section class="gift-registry section-padding" id="gift">
             <div class="container">
                 <div class="row section-title">
+                <div class="row section-title">
                     <div class="title-box">
                         <div class="double-line double-line-top">
                             <i class="fi flaticon-social"></i>
                             <i class="fi flaticon-social"></i>
                         </div>
-                        <h2>Gift registry</h2>
+                        <h2>Photo gallery</h2>
                         <div class="double-line double-line-bottom"></div>
                     </div>
                 </div> <!-- end of section-title -->
@@ -595,64 +595,58 @@
                             <i class="fi flaticon-social"></i>
                             <i class="fi flaticon-social"></i>
                         </div>
-                        <h2>Are you comming</h2>
+                        <h2>Doa dan Ucapan</h2>
                         <div class="double-line double-line-bottom"></div>
                     </div>
                 </div> <!-- end of section-title -->
+                
+                <div class="rsvp-form-wrapper">
+                <div class="chat card-body">
 
-                <div class="row content">
-                    <div class="col col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <div class="rsvp-form-wrapper">
-                            <div class="border-box">
-                                <i class="fi flaticon-clip-1 top-clip"></i>
-                                <i class="fi flaticon-clip-1 bottom-clip"></i>
-                                <div></div>
-                            </div>
-                            <h4>Please reserve <br>before December 16th, 2016</h4>
-                            <form id="rsvp-form" class="form form-inline" method="post">
-                                <div class="row">
-                                    <div class="form-group col col-sm-6">
-                                        <input type="text" class="form-control" name="name" placeholder="Your Name"
-                                        required>
-                                    </div>
-                                    <div class="form-group col col-sm-6">
-                                        <input type="email" class="form-control" name="email" placeholder="Your Email"
-                                        required>
-                                    </div>
-                                    <div class="form-group col col-sm-6">
-                                        <select name="guest" class="form-control">
-                                            <option disabled="disabled" selected>Number of Guest</option>
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col col-sm-6">
-                                        <select name="events" class="form-control">
-                                            <option disabled="disabled" selected>I am attending</option>
-                                            <option>Al events</option>
-                                            <option>Wedding ceremony</option>
-                                            <option>Reception party</option>
-                                        </select>
-                                    </div>
+                    <input type="hidden" id="idbalasan">
+                    <div class="mb-1" id="balasan"></div>
 
-                                    <div class="form-group col col-sm-12">
-                                        <textarea name="notes" class="form-control"
-                                                  placeholder="Your Message"></textarea>
-                                    </div>
-
-                                    <div class="form-group col col-sm-12">
-                                        <button type="submit" class="btn btn-default theme-btn">Send invitation</button>
-                                        <span id="loader"><img src="images/rsvp-ajax-loader.gif" alt="Loader"></span>
-                                    </div>
-                                    <div id="success">Thank you</div>
-                                    <div id="error"> Error occurred while sending email. Try again later. </div>
-                                </div>
-                            </form> <!-- end of form -->
-                        </div>
+                    <div class="isic mb-3">
+                        <label for="formnama" class="form-label">Nama</label>
+                        <input type="text" class="form-control shadow-sm" id="formnama" placeholder="Isikan Nama Anda">
                     </div>
+                    <div class="isic mb-3">
+                        <label for="hadiran" class="form-label" id="labelhadir">Kehadiran  :</label>
+                        <select class="form-select shadow-sm" aria-label="selectkehadiran" id="hadiran">
+                            <option value="0" selected>Konfirmasi Kehadiran</option>
+                            <option value="1">Hadir</option>
+                            <option value="2">Berhalangan</option>
+                        </select>
+                    </div>
+                    <div class="isic mb-3">
+                        <label for="formpesan" class="form-label">Ucapan & Doa</label>
+                        <textarea class="form-control shadow-sm" id="formpesan" rows="4" placeholder="Tulis Ucapan & Doa"></textarea>
+                    </div>
+                    <div class="d-flex">
+                        <button class="flex-fill btn btn-danger btn-sm rounded-4 shadow m-1" style="display: none;" onclick="resetForm()"
+                            id="batal">
+                            Batal<i class="fa-solid fa-xmark ms-1"></i>
+                        </button>
+                        <button class="flex-fill btn btn-primary btn-sm rounded-4 shadow m-1" style="display: none;"
+                            onclick="kirimBalasan()" id="kirimbalasan">
+                            Kirim<i class="fa-solid fa-paper-plane ms-1"></i>
+                        </button>
+                    </div>
+                    <div class="d-grid mb-2">
+                        <button class="btn btn-primary btn-sm rounded-4 shadow" onclick="kirim()" id="kirim">
+                            Kirim<i class="fa-solid fa-paper-plane ms-1"></i>
+                        </button>
+                    </div>
+
+
                 </div>
+                </div>
+
+                <div class="rsvp-form-chat">
+                    <div id="daftarucapan"></div>
+                </div>
+
+                
             </div> <!-- end of container -->
         </section>
         <!-- end of rsvp -->
