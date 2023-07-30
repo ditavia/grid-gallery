@@ -355,42 +355,42 @@
     /*------------------------------------------
         = GOOGLE MAP
     -------------------------------------------*/
-   /*  function map() {
-
-        var locations = [
-            ['Rumah Mempelai ', -7.827793943826596, 110.39055688099077, 1],
-            // ['City inn khulna', 22.820884, 89.551216,2],
-        ];
-
-        var map = new google.maps.Map(document.getElementById('map'), {
-            center: new google.maps.LatLng(-7.827793943826596, 110.39055688099077),
-            zoom: 12,
-            scrollwheel: false,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-
-        });
-
-        var infowindow = new google.maps.InfoWindow();
-
-        var marker, i;
-
-        for (i = 0; i < locations.length; i++) {
-            marker = new google.maps.Marker({
-                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-                map: map,
-                icon: 'images/map-marker.png'
-            });
-
-            google.maps.event.addListener(marker, 'click', (function (marker, i) {
-                return function () {
-                    infowindow.setContent(locations[i][0]);
-                    infowindow.open(map, marker);
-                }
-            })(marker, i));
-        }
-    };
-
- */
+    /*  function map() {
+ 
+         var locations = [
+             ['Rumah Mempelai ', -7.827793943826596, 110.39055688099077, 1],
+             // ['City inn khulna', 22.820884, 89.551216,2],
+         ];
+ 
+         var map = new google.maps.Map(document.getElementById('map'), {
+             center: new google.maps.LatLng(-7.827793943826596, 110.39055688099077),
+             zoom: 12,
+             scrollwheel: false,
+             mapTypeId: google.maps.MapTypeId.ROADMAP
+ 
+         });
+ 
+         var infowindow = new google.maps.InfoWindow();
+ 
+         var marker, i;
+ 
+         for (i = 0; i < locations.length; i++) {
+             marker = new google.maps.Marker({
+                 position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                 map: map,
+                 icon: 'images/map-marker.png'
+             });
+ 
+             google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                 return function () {
+                     infowindow.setContent(locations[i][0]);
+                     infowindow.open(map, marker);
+                 }
+             })(marker, i));
+         }
+     };
+ 
+  */
     /*------------------------------------------
         = RSVP FORM SUBMISSION
     -------------------------------------------*/
@@ -468,9 +468,9 @@
 
         eventClothFadeOut();
 
-        if ($(".map").length) {
+       /*  if ($(".map").length) {
             map();
-        }
+        } */
     }
     //   });
 
@@ -493,6 +493,11 @@
         playAudio();
         awal();
     });
+
+
+
+   
+
 
 })(window.jQuery);
 
@@ -527,3 +532,20 @@ const salin = (btn, msg = null) => {
     }, 1500);
 };
 
+
+$(".abarx").on("click", function () {
+    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+        if (target.length) {
+            $("html, body").animate({
+                scrollTop: target.offset().top - 60
+            }, 1000, "easeInOutExpo");
+            $('.abarx').removeClass('active');
+            $(this).addClass('active');
+            return false;
+        }
+    }
+
+    return false;
+});
