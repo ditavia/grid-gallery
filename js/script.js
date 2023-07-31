@@ -542,10 +542,15 @@ $(".abarx").on("click", function () {
                 scrollTop: target.offset().top - 60
             }, 1000, "easeInOutExpo");
             $('.abarx').removeClass('active');
-            $(this).addClass('active');
+           // $(this).addClass('active');
+
+            var href = $(this).attr("href");
+            $('a[href="'+href+'"]').addClass('active');
+
             return false;
         }
     }
 
     return false;
 });
+
