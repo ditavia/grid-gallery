@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 :root {
     --maroon: #8B0000;
     --bg: #0a0a0a;
@@ -15,7 +16,7 @@
     background-image: url(../images/bgwedding.jpg);
     background-position: center center;
     z-index: -1;
-    filter: blur(2px);
+    filter: blur(7px);
 }
 
 .bukaan {
@@ -25,11 +26,12 @@
     margin-left: auto !important;
     align-items: center !important;
     justify-content: center !important;
-    display: flex ;
+    display: flex;
     padding: 5rem;
     font-family: 'Montserrat';
 }
-.text-white{
+
+.text-white {
     color: white;
 }
 
@@ -43,11 +45,119 @@
     background-color: white;
 }
 
-.bukaan a:hover ,button:hover {
+.bukaan a:hover,
+button:hover {
     background-color: var(--maroon);
     color: white;
 }
 
-.bukaan h1, .bukaan h4, .bukaan p {
+.bukaan h1,
+.bukaan h4,
+.bukaan p {
     text-shadow: var(--shadow);
+}
+
+.barx {
+    list-style: none;
+    margin: 0;
+
+    float: right;
+
+    line-height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.barx>a {
+    color: #777;
+    background-color: transparent;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    position: relative;
+
+}
+
+.barx>a>i {
+    font-size: 25px;
+}
+
+.bawahm {
+    position: fixed;
+    bottom: 0;
+    z-index: 999999;
+    display: none;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+#futer {
+    display: none;
+    margin: auto;
+    border-radius: 10px 0px 10px 0px;
+    box-shadow: 10px 8px 15px 1px rgba(0,0,0,0.61);
+-webkit-box-shadow: 10px 8px 15px 1px rgba(0,0,0,0.61);
+-moz-box-shadow: 10px 8px 15px 1px rgba(0,0,0,0.61);
+}
+
+@media (max-width: 767px) {
+    .barx>a>span {
+        display: none;
+    }
+
+    .navbar-header {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    #barx {
+        display: none;
+    }
+
+    .bawahm {
+        display: flex;
+
+    }
+
+    .barx {
+        float: none;
+      
+    }
+}
+
+@media (max-width: 991px) {
+    .barx {
+        float: none;
+      
+    }
+
+    .bawahm {
+        display: flex;
+
+    }
+
+    #barx {
+        display: none;
+    }
+
+    #futer {
+        display: flex;
+        backdrop-filter: blur(3px);
+        background-color: #ffffffe8;
+    }
+
+    .navbar-header {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+}
+
+.btn.active,
+.btn:active {
+    color: #b73535;
+    font-weight: 500;
 }

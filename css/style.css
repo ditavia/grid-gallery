@@ -2053,7 +2053,7 @@ footer .copyright {
 }
 
 .events .map {
-  height: 424px;
+  height: 344px;
   border: 6px solid #e6e6e6;
 }
 
@@ -2065,7 +2065,7 @@ footer .copyright {
 
 @media (max-width: 767px) {
   .events .map {
-    height: 350px;
+    height: 332px;
   }
 }
 
