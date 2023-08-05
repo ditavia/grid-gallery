@@ -103,6 +103,30 @@ ul {
   .section-padding {
     padding: 80px 0;
   }
+  .groom .pic .img {
+        width: 45%;
+        margin-left: 27%;
+  }
+    .bride .pic .img {
+      width: 45%;
+      margin-left: 27%;
+    }
+    .couple .pic:before {
+      content: "";
+      width: 92%;
+      height: 93%;
+      border: 1px solid #fff;
+      position: absolute;
+      left: 4%;
+      top: 3.5%;
+    }
+    
+    .couple .details p {
+    margin: 0;
+    font-style: italic;
+    text-align: center;
+    }
+
 }
 
 .parallax-flower {
@@ -154,7 +178,7 @@ ul {
 }
 
 .preloader .middle .fa {
-  color: #8B0000;
+  color:#aa9a45;
   font-size: 25px;
   float: left;
   margin-right: 5px;
@@ -220,7 +244,7 @@ ul {
 }
 
 #clock > .box:nth-child(even) {
-  background-color: #8B0000;
+  background-color: #9f9041;
 }
 
 #clock .box div {
@@ -508,7 +532,7 @@ ul {
 .bridesmaids .box .fade-icon .icon,
 .gallery .box .details .icon,
 .gallery .box .fade-icon .icon {
-  background-color: #8B0000;
+  background-color: #aa9a45;
   width: 35px;
   height: 35px;
   line-height: 35px;
@@ -550,7 +574,7 @@ ul {
 }
 
 .theme-btn {
-  background-color: #8B0000;
+  background-color: #aa9a45;
   line-height: 0.66em;
   color: #fff;
   padding: 15px;
@@ -588,12 +612,12 @@ ul {
 .form input:focus,
 .form textarea:focus,
 .form select:focus {
-  border-color: #8B0000;
-  -webkit-box-shadow: 0 0 5px 0 #CD5C5C;
-  -moz-box-shadow: 0 0 5px 0 #CD5C5C;
-  -o-box-shadow: 0 0 5px 0 #CD5C5C;
-  -ms-box-shadow: 0 0 5px 0 #CD5C5C;
-  box-shadow: 0 0 5px 0 #CD5C5C;
+  border-color: #aa9a45;
+  -webkit-box-shadow: 0 0 5px 0 #bfb163;
+  -moz-box-shadow: 0 0 5px 0 #bfb163;
+  -o-box-shadow: 0 0 5px 0 #bfb163;
+  -ms-box-shadow: 0 0 5px 0 #bfb163;
+  box-shadow: 0 0 5px 0 #bfb163;
 }
 
 .form ::-webkit-input-placeholder {
@@ -685,7 +709,7 @@ ul {
 }
 
 .social-links li a {
-  background-color: #CD5C5C;
+  background-color: #bfb163;
   width: 35px;
   height: 35px;
   line-height: 35px;
@@ -695,7 +719,7 @@ ul {
 }
 
 .social-links li a:hover {
-  background-color: #8B0000;
+  background-color: #aa9a45;
 }
 
 /***********************
@@ -756,7 +780,7 @@ header #navbar .mobile-menu-logo {
 }
 
 header #navbar .mobile-menu-logo i {
-  color: #8B0000;
+  color: #aa9a45;
 }
 
 @media (max-width: 991px) {
@@ -788,7 +812,7 @@ header #navbar .navbar-nav > .active > a,
 header #navbar .navbar-nav > .active > a:focus,
 header #navbar .navbar-nav a:hover {
   background-color: transparent;
-  color: #8B0000;
+  color: #aa9a45;
 }
 
 @media screen and (min-width: 992px) {
@@ -853,7 +877,7 @@ header #navbar .navbar-nav > .open > a:hover {
     width: 100%;
   }
   header .navbar-header button {
-    background-color: #8B0000;
+    background-color: #aa9a45;
     width: 40px;
     height: 35px;
     border: 0;
@@ -897,7 +921,7 @@ header #navbar .navbar-nav > .open > a:hover {
     overflow: auto;
   }
   header #navbar .close-navbar {
-    background-color: #8B0000;
+    background-color: #aa9a45;
     width: 35px;
     height: 35px;
     color: #fff;
@@ -1029,7 +1053,7 @@ header #navbar .navbar-nav > .open > a:hover {
   height: 0;
   border-left: 90px solid transparent;
   border-right: 90px solid transparent;
-  border-top: 60px solid rgba(178, 34, 34, 0.9);
+  border-top: 60px solid rgba(170, 154, 69, 0.9);
   position: absolute;
   top: 0;
   left: 50%;
@@ -1044,7 +1068,7 @@ header #navbar .navbar-nav > .open > a:hover {
   .logo-bottom-shape-wrapper .logo-bottom-shape:before {
     border-left: 60px solid transparent;
     border-right: 60px solid transparent;
-    border-top: 50px solid rgba(178, 34, 34, 0.9);
+    border-top: 50px solid rgba(170, 154, 69, 0.9);
   }
 }
 
@@ -1093,9 +1117,9 @@ footer:before {
 }
 
 footer .box {
-  background: rgba(240, 128, 128, 0.6);
+  background: rgba(170, 154, 69, 0.6);
   padding: 50px 25px;
-  border: 5px solid #8B0000;
+  border: 5px solid #aa9a45;
   margin-bottom: 35px;
   position: relative;
   /** frame **/
@@ -1104,7 +1128,7 @@ footer .box {
 @media (max-width: 767px) {
   footer .box {
     padding: 40px 20px;
-    border: 3px solid #8B0000;
+    border: 3px solid #aa9a45;
   }
 }
 
@@ -1364,7 +1388,7 @@ footer .copyright {
 }
 
 .hero .announcement-wrapper .couple-name {
-  background-color: rgba(240, 128, 128, 0.5);
+  background-color: rgba(170, 154, 69, 0.5);
   display: inline-block;
   margin-top: 20px;
   padding: 15px 35px;
@@ -1379,7 +1403,7 @@ footer .copyright {
 
 .hero .announcement-wrapper .couple-name:before, .hero .announcement-wrapper .couple-name:after {
   content: "";
-  background-color: #8B0000;
+  background-color: #aa9a45;
   width: 105%;
   height: 3px;
   position: absolute;
@@ -1490,7 +1514,7 @@ footer .copyright {
   font-family: FontAwesome;
   content: "\f004";
   font-size: 20px;
-  color: #8B0000;
+  color: #aa9a45;
   opacity: 0.5;
 }
 
@@ -1511,7 +1535,7 @@ footer .copyright {
 # count-down
 --------------------------------------------------------------*/
 .count-down {
-  background-color: #B22222;
+  background-color:#aa9a45;
   color: #fff;
   position: relative;
 }
@@ -1577,6 +1601,25 @@ footer .copyright {
 @media (max-width: 767px) {
   .couple .pic:before {
     display: none;
+    content: "";
+      width: 92%;
+      height: 93%;
+      border: 1px solid #fff;
+      position: absolute;
+      left: 4%;
+      top: 3.5%;
+  }
+}
+
+@media (max-width: 450px) {
+  .couple .pic:before {
+      content: "";
+  width: 92%;
+  height: 93%;
+  border: 1px solid #0b0000;
+  position: absolute;
+  left: 4%;
+  top: 3.5%;
   }
 }
 
@@ -1590,7 +1633,7 @@ footer .copyright {
 .couple .details h4 {
   font-size: 50px;
   font-weight: bold;
-  color: #8B0000;
+  color: #aa9a45;
   margin: 2em 0 0.5em;
   /* text-transform: uppercase; */
   letter-spacing: 1px;
@@ -1600,7 +1643,13 @@ footer .copyright {
 
 @media (max-width: 767px) {
   .couple .details h4 {
-    font-size: 18px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #aa9a45;
+    margin: 10px 0 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Dancing Script', cursive;
   }
 }
 
@@ -1722,14 +1771,14 @@ footer .copyright {
 .story .story-box .nav-tabs li {
   width: 25%;
   margin: 0;
-  border-right: 1px solid #8B0000;
+  border-right: 1px solid #aa9a45;
 }
 
 @media (max-width: 550px) {
   .story .story-box .nav-tabs li {
     width: 100%;
     border-right: 0;
-    border-bottom: 1px solid #8B0000;
+    border-bottom: 1px solid #aa9a45;
   }
 }
 
@@ -1738,7 +1787,7 @@ footer .copyright {
 }
 
 .story .story-box .nav-tabs li a {
-  background-color: #CD5C5C;
+  background-color: #bfb163;
   display: block;
   font-size: 13px;
   color: #fff;
@@ -1777,7 +1826,7 @@ footer .copyright {
 }
 
 .story .story-box .nav-tabs li.active a {
-  background-color: #8B0000;
+  background-color: #aa9a45;
 }
 
 .story .tab-content {
@@ -1814,7 +1863,7 @@ footer .copyright {
 
 .story .tab-content .story-details span {
   display: block;
-  color: #8B0000;
+  color: #aa9a45;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -1873,18 +1922,18 @@ footer .copyright {
 .events .event-boxes {
   position: relative;
   overflow: hidden;
-  border: 6px solid #CD5C5C;
+  border: 6px solid #bfb163;
 }
 
 @media (max-width: 767px) {
   .events .event-boxes {
-    border: 3px solid #CD5C5C;
+    border: 3px solid #bfb163;
   }
 }
 
 .events .event-boxes .left-half,
 .events .event-boxes .right-half {
-  background-color: #CD5C5C;
+  background-color: #bfb163;
   width: 50%;
   height: 100%;
   position: absolute;
@@ -1994,7 +2043,7 @@ footer .copyright {
 .events .bachalor-party h3 {
   font-size: 18px;
   font-weight: bold;
-  color: #8B0000;
+  color: #aa9a45;
   margin: 0 0 0.7em;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -2152,7 +2201,7 @@ footer .copyright {
 .bquotes .bquotes-slider .owl-dots .owl-dot span {
   width: 17px !important;
   height: 17px !important;
-  background-color: #8B0000;
+  background-color: #aa9a45;
   border: 4px solid #615828;
   opacity: 0.5;
   margin: 0;
@@ -2190,7 +2239,7 @@ footer .copyright {
 .important-people .bridesmaids h3 {
   font-size: 22px;
   font-weight: bold;
-  color: #CD5C5C;
+  color: #bfb163;
   margin: 0 0 1.5em;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -2220,7 +2269,7 @@ footer .copyright {
 .important-people .groomsmen .owl-controls .owl-next,
 .important-people .bridesmaids .owl-controls .owl-prev,
 .important-people .bridesmaids .owl-controls .owl-next {
-  background-color: #CD5C5C;
+  background-color: #bfb163;
   width: 32px;
   height: 32px;
   line-height: 32px;
@@ -2238,7 +2287,7 @@ footer .copyright {
 .important-people .groomsmen .owl-controls .owl-next:hover,
 .important-people .bridesmaids .owl-controls .owl-prev:hover,
 .important-people .bridesmaids .owl-controls .owl-next:hover {
-  background-color: #8B0000;
+  background-color: #aa9a45;
 }
 
 @media (max-width: 767px) {
@@ -2458,7 +2507,7 @@ footer .copyright {
 .rsvp .rsvp-form-wrapper .border-box {
   width: 95%;
   height: 93%;
-  border: 1px solid #CD5C5C;
+  border: 1px solid #bfb163;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -2478,7 +2527,7 @@ footer .copyright {
 .rsvp .rsvp-form-wrapper .border-box > div {
   width: 99%;
   height: 99%;
-  border: 1px solid #CD5C5C;
+  border: 1px solid #bfb163;
   position: relative;
   left: 50%;
   top: 50%;
@@ -2490,7 +2539,7 @@ footer .copyright {
 }
 
 .rsvp .rsvp-form-wrapper .border-box .fi {
-  background: #8B0000;
+  background: #aa9a45;
   display: inline-block;
   width: 32px;
   height: 32px;
@@ -2717,7 +2766,7 @@ footer .copyright {
 }
 
 .journal .journal-content h4 a {
-  color: #8B0000;
+  color: #aa9a45;
 }
 
 .journal .journal-content h4 + span {
@@ -2790,7 +2839,7 @@ footer .copyright {
 }
 
 .journal .journal-content .modal .close {
-  background-color: #8B0000;
+  background-color: #aa9a45;
   width: 35px;
   height: 35px;
   line-height: 35px;
@@ -2804,7 +2853,7 @@ footer .copyright {
 }
 
 .journal .journal-content .modal .modal-body span {
-  background-color: #CD5C5C;
+  background-color: #bfb163;
   font-size: 13px;
   color: white;
   text-transform: uppercase;

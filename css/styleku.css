@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
-    --maroon: #8B0000;
+    --maroon: #aa9a45;
     --bg: #0a0a0a;
     --shadow: 0 2px 2px rgb(0 0 0/0.5);
 }
@@ -16,7 +16,7 @@
     background-image: url(../images/bgwedding.jpg);
     background-position: center center;
     z-index: -1;
-    filter: blur(7px);
+    filter: blur(5px);
 }
 
 .bukaan {
@@ -41,14 +41,14 @@
 
 .bukaan button {
     border: none;
-    color: var(--maroon);
-    background-color: white;
+    color: white;
+    background-color: var(--maroon);
 }
 
 .bukaan a:hover,
 button:hover {
-    background-color: var(--maroon);
-    color: white;
+    background-color: white;
+    color: var(--maroon);
 }
 
 .bukaan h1,
@@ -123,7 +123,6 @@ button:hover {
 
     .barx {
         float: none;
-      
     }
 }
 
@@ -158,6 +157,6 @@ button:hover {
 
 .btn.active,
 .btn:active {
-    color: #b73535;
+    color: #aa9a45;
     font-weight: 500;
 }
