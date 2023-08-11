@@ -1764,6 +1764,9 @@ footer .copyright {
   .story .story-box-wrapper > .col:last-child {
     display: none;
   }
+  .story .story-box-wrapper .getmerried {
+    padding-top: 220px;
+  }
 }
 
 .story .story-box .nav-tabs {
@@ -1884,6 +1887,10 @@ footer .copyright {
   position: relative;
 }
 
+.story .poto {
+  margin-top: 3px;
+}
+
 @media (max-width: 991px) {
   .story .pic-holder {
     display: inline-block;
@@ -1910,11 +1917,11 @@ footer .copyright {
   width: 100%;
   font-family: "Sail", cursive;
   font-size: 38px;
-  color: #fff;
+  color:black;
   text-align: center;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 121%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
