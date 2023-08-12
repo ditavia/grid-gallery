@@ -519,7 +519,10 @@ function pauseAudio() {
 
     myAudio.pause();
 }
-
+function salin(elem) {
+    navigator.clipboard.writeText(elem.dataset.nomer);
+}
+   /*  
 const salin = (btn, msg = null) => {
     navigator.clipboard.writeText(btn.getAttribute('data-nomer'));
     let tmp = btn.innerHTML;
@@ -531,7 +534,7 @@ const salin = (btn, msg = null) => {
         btn.disabled = false;
         btn.focus();
     }, 1500);
-};
+}; */
 
 
 const resetForm = () => {
