@@ -519,8 +519,17 @@ function pauseAudio() {
 
     myAudio.pause();
 }
-function salin(elem) {
-    navigator.clipboard.writeText(elem.dataset.nomer);
+function salin(btn, msg = null) {
+    const tmp = btn.innerHTML;
+    btn.innerHTML = msg ?? "Tersalin";
+    btn.disabled = true;
+
+    setTimeout(() => {
+        btn.innerHTML = tmp;
+        btn.disabled = false;
+        btn.focus();
+        document.execCommand("copy", false, btn.getAttribute("data-nomer"));
+    }, 1500);
 }
    /*  
 const salin = (btn, msg = null) => {
