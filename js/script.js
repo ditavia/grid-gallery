@@ -492,6 +492,7 @@
         $("#bukaan").hide();
         playAudio();
         awal();
+       
     });
 
 
@@ -595,7 +596,7 @@ const balasan = async (button, msg = null) => {
     document.getElementById('hadiran').style.display = 'none';
     document.getElementById('labelhadir').style.display = 'none';
 
-    await fetch(getUrl('/api/comment/' + id), parseRequest('GET', token))
+    await fetch(getUrl('https://undangan9.000webhostapp.com/komen/' + id), parseRequest('GET'))
         .then((res) => res.json())
         .then((res) => {
             if (res.code == 200) {
@@ -674,8 +675,8 @@ const kirimBalasan = async () => {
 
     let isSuccess = false;
     await fetch(
-        getUrl('/api/comment'),
-        parseRequest('POST', token, {
+        getUrl('https://undangan9.000webhostapp.com/komen'),
+        parseRequest('POST',  {
             nama: nama,
             id: id,
             komentar: komentar
@@ -851,15 +852,15 @@ const pagination = (() => {
 const ucapan = async () => {
     const UCAPAN = document.getElementById('daftarucapan');
     UCAPAN.innerHTML = renderLoading(pagination.getPer());
-    let token = localStorage.getItem('token') ?? '';
+    /* let token = localStorage.getItem('token') ?? '';
 
     if (token.length == 0) {
         alert('Terdapat kesalahan, token kosong !');
         window.location.reload();
         return;
-    }
+    } */
 
-    await fetch(getUrl(`/api/comment?per=${pagination.getPer()}&next=${pagination.getNext()}`), parseRequest('GET', token))
+    await fetch(getUrl('https://undangan9.000webhostapp.com/komen?'+`per=${pagination.getPer()}&nex=${pagination.getNext()}`), parseRequest('GET'))
         .then((res) => res.json())
         .then((res) => {
             if (res.code == 200) {
@@ -920,13 +921,13 @@ const kirim = async () => {
     let nama = document.getElementById('formnama').value;
     let hadir = document.getElementById('hadiran').value;
     let komentar = document.getElementById('formpesan').value;
-    let token = localStorage.getItem('token') ?? '';
+    /* let token = localStorage.getItem('token') ?? '';
 
     if (token.length == 0) {
         alert('Terdapat kesalahan, token kosong !');
         window.location.reload();
         return;
-    }
+    } */
 
     if (nama.length == 0) {
         alert('nama tidak boleh kosong');
@@ -957,9 +958,9 @@ const kirim = async () => {
     document.getElementById('kirim').innerHTML = `<span class="spinner-border spinner-border-sm me-1"></span>Loading...`;
 
     await fetch(
-        getUrl('/api/comment'),
-        parseRequest('POST', token, {
-            nama: nama,
+        getUrl('https://undangan9.000webhostapp.com/komen'),
+        parseRequest('POST',  {
+            name: nama,
             hadir: hadir == 1,
             komentar: komentar
         }))
