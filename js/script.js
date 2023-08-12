@@ -518,7 +518,34 @@ const playAudio = () => {
 function pauseAudio() {
 
     myAudio.pause();
-}
+} 
+const salin = (btn, msg = null) => {
+    copyToClipboard(btn.getAttribute('data-nomer'));
+    let tmp = btn.innerHTML;
+    btn.innerHTML = msg ?? 'Tersalin';
+    btn.disabled = true;
+
+    setTimeout(() => {
+        btn.innerHTML = tmp;
+        btn.disabled = false;
+        btn.focus();
+    }, 1500);
+}; 
+  
+function copyToClipboard(textToCopy) {
+    const temp = document.createElement("input")
+    temp.type = "text"
+    temp.value = textToCopy
+  
+    document.body.appendChild(temp)
+    temp.select()
+    document.execCommand("Copy")
+    document.body.removeChild(temp)
+  }
+
+
+
+/*
 function salin(btn, msg = null) {
     const tmp = btn.innerHTML;
     btn.innerHTML = msg ?? "Tersalin";
@@ -530,7 +557,7 @@ function salin(btn, msg = null) {
         btn.focus();
         document.execCommand("copy", false, btn.getAttribute("data-nomer"));
     }, 1500);
-}
+} */
    /*  
 const salin = (btn, msg = null) => {
     navigator.clipboard.writeText(btn.getAttribute('data-nomer'));
