@@ -508,8 +508,8 @@ const tamu = urlParams.get('tamu');
 const div = document.getElementById("tamu");
 div.innerHTML = (tamu) ? tamu : "Dita Via Tyasmala";
 
-let myAudio = new Audio();
-  myAudio.src = 'hbd.mp3';
+let myAudio = new Audio('hbd.mp3');
+   
 const playAudio = () => { 
     myAudio.autoplay = true;
     myAudio.loop = true;
