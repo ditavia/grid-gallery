@@ -509,9 +509,8 @@ const div = document.getElementById("tamu");
 div.innerHTML = (tamu) ? tamu : "Dita Via Tyasmala";
 
 let myAudio = new Audio();
-const playAudio = () => {
-
-    myAudio.src = 'hbd.mp3';
+  myAudio.src = 'hbd.mp3';
+const playAudio = () => { 
     myAudio.autoplay = true;
     myAudio.loop = true;
 }
