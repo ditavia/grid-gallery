@@ -513,6 +513,7 @@ let myAudio = new Audio('hbd.mp3');
 const playAudio = () => { 
     myAudio.autoplay = true;
     myAudio.loop = true;
+    myAudio.play()
 }
 function pauseAudio() {
 
