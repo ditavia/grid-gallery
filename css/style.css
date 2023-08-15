@@ -1092,7 +1092,7 @@ header #navbar .navbar-nav > .open > a:hover {
 # footer
 --------------------------------------------------------------*/
 footer {
-  background: url("../images/footer/footer-bg.jpg") center center/cover no-repeat fixed;
+ 
   position: relative;
   text-align: center;
   color: #fff;
